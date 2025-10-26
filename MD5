@@ -1,4 +1,4 @@
-b044fb33851557bc6be93e1cb9c7dd77 *DESCRIPTION
+1af587fbb0d3c638f9fc66f21dae4dbb *DESCRIPTION
 10a58a3945d9c846a7aec85c39f1a7cb *NAMESPACE
 1ec44a8741b7f9ab09c5580b0e4452a6 *R/base-in.R
 496244300b8633f31471d43ec36b695e *R/base-locale.R
@@ -17,7 +17,7 @@ f4e2176fde9889b6dc6ecdf7c823dedd *R/calendars.R
 07c1c054744d7295213f1b5b3252b9f5 *R/cut.R
 9b7a3c98b4da7994e8129e54e4f751ab *R/format.R
 5f5a91aa1c6f3ed24c9004d8744b15b9 *R/merge.R
-a76c2d0ff3b0362a3705bccb6ed00ea2 *R/methods.R
+39eb94c891b9db2808bb528da86619e0 *R/methods.R
 96167e82f9979541c457959a01bc194c *R/ops.R
 10e4939830275f0ef4339029df03ef55 *R/ord_reg.R
 a2594544b8363461ecadb66f2a3fecff *R/other.R
@@ -37,17 +37,17 @@ e3ce4ee800b985cf82d63480905c9add *R/tspan.R
 9df60af45b86b1da33899921c2e92491 *R/types.R
 8be9b55b697d6140186f28957889cf70 *R/tzone.R
 5fd9edcf26ba307af9c73edd2c70c7fc *README.md
-d903761335fdcf05d0bef519e619af91 *build/vignette.rds
+5bc6202bc038a79f8aec6e899528bfbd *build/vignette.rds
 7bba4bf58fa6343d6a30e41a4cf625d9 *demo/00Index
 ccf07b2c187cc209d4293878d0ae910e *demo/intro2tind.R
 4e7427d3cd187a0776db18a6dff4caee *inst/doc/calendar.R
 f663060548432445e02590befe1360e7 *inst/doc/calendar.Rmd
-3fcef03862cf8e2ccb9466a7f467ac5e *inst/doc/calendar.html
-650e2da0182939ceda97b7a2378ad420 *inst/doc/indices.R
+4645f07948a0f610050e3a1df64b9ea3 *inst/doc/calendar.html
+033911d6309329c155a97b128a878ebe *inst/doc/indices.R
 e137e31b1f4198e122bf727b022b2d9a *inst/doc/indices.Rmd
-5b3e8b01801cfc9e8e00b17e8df885f1 *inst/doc/indices.html
-635a9f88b7e194a240d9442934164281 *inst/po/en@quot/LC_MESSAGES/R-tind.mo
-f07207d22b1250ae46e461f79d9056a0 *inst/po/pl/LC_MESSAGES/R-tind.mo
+4ff98043b2ed80649fde20b19f995251 *inst/doc/indices.html
+7bdac4c46827412dc00b53526224186e *inst/po/en@quot/LC_MESSAGES/R-tind.mo
+8a783855c77814b0cf123bd9d06f0486 *inst/po/pl/LC_MESSAGES/R-tind.mo
 7919bcfdc843d0a6e1dcb0c874312c40 *man/Ops.Rd
 d0b57173aec594c995f5783a03006bfb *man/as.tind.Rd
 6a87fd497c82f2d7fc4702863f1e284a *man/as.tzone.Rd
@@ -89,8 +89,8 @@ e75e37ad12b74812e95157c97a2bf970 *man/tind-coercion.Rd
 4691bc8393658f9258faea3b1a33abda *man/tspan.Rd
 bc7fa6ce53cbff7422426b2208cbc8b1 *man/tzone.Rd
 4bb040ed66fdd86710420043ce2919a8 *man/year_frac.Rd
-7fd76a604b9051723f9c6e08597d5250 *po/R-pl.po
-592064146dba32e35fcaf08b988f4007 *po/R-tind.pot
+4f0ff6f7678a15d0f2c931ac89642086 *po/R-pl.po
+8fb2de275afe3ea6722a1db141560398 *po/R-tind.pot
 d3819e28bb579324d896bca655790b3e *src/Makevars
 07940b81611cae400d6fe9c08a8aac32 *src/calendar.c
 9af37ae80881001c638a7e66ba60c85f *src/calendar.h
@@ -114,7 +114,7 @@ dfbb11a67950fb208fb88cf3ed9556b7 *src/tinterval.c
 2de9af96c53e68291245fc116f393d02 *src/tinterval.h
 4ceaeb5934675010e442c41656b000b0 *src/tlimits.c
 e6cb5c089406fc6010e09a381086d61c *src/tlimits.h
-f4d22226ca5acf764e6f6ddff50678af *src/tochar.c
+7929ef4df5efd6c450a3082f77984486 *src/tochar.c
 933882369e7ce4cc5ab907926aa6404d *src/tochar.h
 6496feaed5b96b5e5ebf8efad2ff7e94 *tests/testthat.R
 923a319b3fb22e5f5afbfc0ab61b6135 *tests/testthat/test-00-base-utils.R
@@ -129,7 +129,7 @@ e190cdb387bd15972d8d1a66fc2162ae *tests/testthat/test-03-base-tz.R
 791740109a126de8395a83893cd7627c *tests/testthat/test-09-base-parse.R
 9821abce0676c642f2bb11a8e6e89092 *tests/testthat/test-10-tind.R
 c6ceb261cadf8db0b238acd6eb0358e7 *tests/testthat/test-11-format_parse.R
-d9705f100dbe7ae7b5b967a15cebd088 *tests/testthat/test-12-coercion.R
+a28f049b8ebd6b55dbd060c2a8c4ae7d *tests/testthat/test-12-coercion.R
 62c259ae59f9ad12af81db119a58bdab *tests/testthat/test-13-methods.R
 38fb85d05ab5bdaa7e536673d143caca *tests/testthat/test-14-tdiff.R
 71095f791da64ce93cbda4fbdf8c1ba1 *tests/testthat/test-15-tinterval.R
