@@ -358,11 +358,11 @@ conventions) and computation of accrual factors are provided.</p>
 <code>today()</code> and <code>now()</code>.</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="fu">today</span>()</span></code></pre></div>
 <pre class="r-output"><code>## date [tind]
-## [1] 2025-10-25
+## [1] 2025-11-07
 </code></pre>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="fu">now</span>()</span></code></pre></div>
 <pre class="r-output"><code>## date-time, time zone: Europe/Warsaw [tind]
-## [1]  2025-10-25 11:15:59 CEST
+## [1]  2025-11-07 09:05:42 CET
 </code></pre>
 <p>By default, the system time zone (as returned by
 <code>Sys.timezone()</code>) is used. However, we can check the current
@@ -370,35 +370,35 @@ time in other time zones. Let us do it for Tokyo, Warsaw, London, and
 New York.</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a><span class="fu">now</span>(<span class="st">&quot;Asia/Tokyo&quot;</span>)</span></code></pre></div>
 <pre class="r-output"><code>## date-time, time zone: Asia/Tokyo [tind]
-## [1]  2025-10-25 18:15:59 JST
+## [1]  2025-11-07 17:05:42 JST
 </code></pre>
 <div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a><span class="fu">today</span>(<span class="st">&quot;Asia/Tokyo&quot;</span>)</span></code></pre></div>
 <pre class="r-output"><code>## date [tind]
-## [1] 2025-10-25
+## [1] 2025-11-07
 </code></pre>
 <div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a><span class="fu">now</span>(<span class="st">&quot;Europe/Warsaw&quot;</span>)</span></code></pre></div>
 <pre class="r-output"><code>## date-time, time zone: Europe/Warsaw [tind]
-## [1]  2025-10-25 11:15:59 CEST
+## [1]  2025-11-07 09:05:42 CET
 </code></pre>
 <div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a><span class="fu">today</span>(<span class="st">&quot;Europe/Warsaw&quot;</span>)</span></code></pre></div>
 <pre class="r-output"><code>## date [tind]
-## [1] 2025-10-25
+## [1] 2025-11-07
 </code></pre>
 <div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a><span class="fu">now</span>(<span class="st">&quot;Europe/London&quot;</span>)</span></code></pre></div>
 <pre class="r-output"><code>## date-time, time zone: Europe/London [tind]
-## [1]  2025-10-25 10:15:59 BST
+## [1]  2025-11-07 08:05:42 GMT
 </code></pre>
 <div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a><span class="fu">today</span>(<span class="st">&quot;Europe/London&quot;</span>)</span></code></pre></div>
 <pre class="r-output"><code>## date [tind]
-## [1] 2025-10-25
+## [1] 2025-11-07
 </code></pre>
 <div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" tabindex="-1"></a><span class="fu">now</span>(<span class="st">&quot;America/New_York&quot;</span>)</span></code></pre></div>
 <pre class="r-output"><code>## date-time, time zone: America/New_York [tind]
-## [1]  2025-10-25 05:15:59 EDT
+## [1]  2025-11-07 03:05:42 EST
 </code></pre>
 <div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" tabindex="-1"></a><span class="fu">today</span>(<span class="st">&quot;America/New_York&quot;</span>)</span></code></pre></div>
 <pre class="r-output"><code>## date [tind]
-## [1] 2025-10-25
+## [1] 2025-11-07
 </code></pre>
 </div>
 <div id="time-index-components-year-month-day" class="section level2">
@@ -407,7 +407,7 @@ New York.</p>
 functions for extracting time index components, see examples below.</p>
 <div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" tabindex="-1"></a>(nw <span class="ot">&lt;-</span> <span class="fu">now</span>())</span></code></pre></div>
 <pre class="r-output"><code>## date-time, time zone: Europe/Warsaw [tind]
-## [1]  2025-10-25 11:15:59 CEST
+## [1]  2025-11-07 09:05:42 CET
 </code></pre>
 <div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" tabindex="-1"></a><span class="fu">year</span>(nw)</span></code></pre></div>
 <pre class="r-output"><code>## [1] 2025
@@ -416,38 +416,38 @@ functions for extracting time index components, see examples below.</p>
 <pre class="r-output"><code>## [1] 4
 </code></pre>
 <div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" tabindex="-1"></a><span class="fu">month</span>(nw)</span></code></pre></div>
-<pre class="r-output"><code>## [1] 10
+<pre class="r-output"><code>## [1] 11
 </code></pre>
 <div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" tabindex="-1"></a><span class="fu">month</span>(nw, <span class="at">labels =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
-<pre class="r-output"><code>## [1] Oct
+<pre class="r-output"><code>## [1] Nov
 ## 12 Levels: Jan &lt; Feb &lt; Mar &lt; Apr &lt; May &lt; Jun &lt; Jul &lt; Aug &lt; Sep &lt; ... &lt; Dec
 </code></pre>
 <div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" tabindex="-1"></a><span class="fu">month</span>(nw, <span class="at">labels =</span> <span class="cn">TRUE</span>, <span class="at">abbreviate =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre class="r-output"><code>## [1] October
+<pre class="r-output"><code>## [1] November
 ## 12 Levels: January &lt; February &lt; March &lt; April &lt; May &lt; June &lt; ... &lt; December
 </code></pre>
 <div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" tabindex="-1"></a><span class="fu">week</span>(nw)</span></code></pre></div>
-<pre class="r-output"><code>## [1] 43
+<pre class="r-output"><code>## [1] 45
 </code></pre>
 <div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" tabindex="-1"></a><span class="fu">day</span>(nw)</span></code></pre></div>
-<pre class="r-output"><code>## [1] 25
+<pre class="r-output"><code>## [1] 7
 </code></pre>
 <div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" tabindex="-1"></a><span class="fu">day_of_week</span>(nw)</span></code></pre></div>
-<pre class="r-output"><code>## [1] 6
+<pre class="r-output"><code>## [1] 5
 </code></pre>
 <div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" tabindex="-1"></a><span class="fu">day_of_week</span>(nw, <span class="at">labels =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
-<pre class="r-output"><code>## [1] Sat
+<pre class="r-output"><code>## [1] Fri
 ## Levels: Mon &lt; Tue &lt; Wed &lt; Thu &lt; Fri &lt; Sat &lt; Sun
 </code></pre>
 <div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" tabindex="-1"></a><span class="fu">day_of_week</span>(nw, <span class="at">labels =</span> <span class="cn">TRUE</span>, <span class="at">abbreviate =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre class="r-output"><code>## [1] Saturday
+<pre class="r-output"><code>## [1] Friday
 ## 7 Levels: Monday &lt; Tuesday &lt; Wednesday &lt; Thursday &lt; Friday &lt; ... &lt; Sunday
 </code></pre>
 <div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" tabindex="-1"></a><span class="fu">day_of_year</span>(nw)</span></code></pre></div>
-<pre class="r-output"><code>## [1] 298
+<pre class="r-output"><code>## [1] 311
 </code></pre>
 <div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" tabindex="-1"></a><span class="fu">hour</span>(nw)</span></code></pre></div>
-<pre class="r-output"><code>## [1] 11
+<pre class="r-output"><code>## [1] 9
 </code></pre>
 <div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" tabindex="-1"></a><span class="fu">am</span>(nw)</span></code></pre></div>
 <pre class="r-output"><code>## [1] TRUE
@@ -456,10 +456,10 @@ functions for extracting time index components, see examples below.</p>
 <pre class="r-output"><code>## [1] FALSE
 </code></pre>
 <div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" tabindex="-1"></a><span class="fu">minute</span>(nw)</span></code></pre></div>
-<pre class="r-output"><code>## [1] 15
+<pre class="r-output"><code>## [1] 5
 </code></pre>
 <div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" tabindex="-1"></a><span class="fu">second</span>(nw)</span></code></pre></div>
-<pre class="r-output"><code>## [1] 59
+<pre class="r-output"><code>## [1] 42
 </code></pre>
 </div>
 <div id="properties-of-time-indices" class="section level2">
@@ -504,23 +504,23 @@ operators and <code>-</code> can be used to compute time differences
 (returning objects of auxiliary <code>tdiff</code> class).</p>
 <div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" tabindex="-1"></a>(x <span class="ot">&lt;-</span> <span class="fu">today</span>())</span></code></pre></div>
 <pre class="r-output"><code>## date [tind]
-## [1] 2025-10-25
+## [1] 2025-11-07
 </code></pre>
 <div class="sourceCode" id="cb38"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" tabindex="-1"></a>x <span class="sc">+</span> <span class="dv">0</span><span class="sc">:</span><span class="dv">3</span></span></code></pre></div>
 <pre class="r-output"><code>## date [tind]
-## [1] 2025-10-25 2025-10-26 2025-10-27 2025-10-28
+## [1] 2025-11-07 2025-11-08 2025-11-09 2025-11-10
 </code></pre>
 <div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" tabindex="-1"></a>x <span class="sc">-</span> <span class="dv">0</span><span class="sc">:</span><span class="dv">3</span></span></code></pre></div>
 <pre class="r-output"><code>## date [tind]
-## [1] 2025-10-25 2025-10-24 2025-10-23 2025-10-22
+## [1] 2025-11-07 2025-11-06 2025-11-05 2025-11-04
 </code></pre>
 <div class="sourceCode" id="cb40"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1" tabindex="-1"></a>x <span class="sc">-</span> <span class="dv">3</span><span class="sc">:</span><span class="dv">0</span></span></code></pre></div>
 <pre class="r-output"><code>## date [tind]
-## [1] 2025-10-22 2025-10-23 2025-10-24 2025-10-25
+## [1] 2025-11-04 2025-11-05 2025-11-06 2025-11-07
 </code></pre>
 <div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1" tabindex="-1"></a>x <span class="sc">-</span> <span class="fu">as.date</span>(<span class="st">&quot;2000-01-01&quot;</span>)</span></code></pre></div>
 <pre class="r-output"><code>## time difference, unit: day [tdiff]
-## [1]  9429d (~25.8y)
+## [1]  9442d (~25.9y)
 </code></pre>
 <p>Operators <code>%+y%</code>, <code>%-y%</code>, <code>%+m%</code>,
 <code>%-m%</code>, <code>%+d%</code>, <code>%-d%</code>, etc. can be
@@ -534,61 +534,61 @@ order to avoid conflicts with base functions <code>months</code> and
 <code>quarters</code>).</p>
 <div class="sourceCode" id="cb42"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" tabindex="-1"></a>(x <span class="ot">&lt;-</span> <span class="fu">today</span>())</span></code></pre></div>
 <pre class="r-output"><code>## date [tind]
-## [1] 2025-10-25
+## [1] 2025-11-07
 </code></pre>
 <div class="sourceCode" id="cb43"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1" tabindex="-1"></a>x <span class="sc">%+y%</span> <span class="sc">-</span><span class="dv">1</span><span class="sc">:</span><span class="dv">1</span></span></code></pre></div>
 <pre class="r-output"><code>## date [tind]
-## [1] 2024-10-25 2025-10-25 2026-10-25
+## [1] 2024-11-07 2025-11-07 2026-11-07
 </code></pre>
 <div class="sourceCode" id="cb44"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1" tabindex="-1"></a>x <span class="sc">+</span> <span class="fu">years</span>(<span class="sc">-</span><span class="dv">1</span><span class="sc">:</span><span class="dv">1</span>)</span></code></pre></div>
 <pre class="r-output"><code>## date [tind]
-## [1] 2024-10-25 2025-10-25 2026-10-25
+## [1] 2024-11-07 2025-11-07 2026-11-07
 </code></pre>
 <div class="sourceCode" id="cb45"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1" tabindex="-1"></a>x <span class="sc">%+m%</span> <span class="sc">-</span><span class="dv">1</span><span class="sc">:</span><span class="dv">1</span></span></code></pre></div>
 <pre class="r-output"><code>## date [tind]
-## [1] 2025-09-25 2025-10-25 2025-11-25
+## [1] 2025-10-07 2025-11-07 2025-12-07
 </code></pre>
 <div class="sourceCode" id="cb46"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" tabindex="-1"></a>x <span class="sc">+</span> <span class="fu">mnths</span>(<span class="sc">-</span><span class="dv">1</span><span class="sc">:</span><span class="dv">1</span>)</span></code></pre></div>
 <pre class="r-output"><code>## date [tind]
-## [1] 2025-09-25 2025-10-25 2025-11-25
+## [1] 2025-10-07 2025-11-07 2025-12-07
 </code></pre>
 <div class="sourceCode" id="cb47"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1" tabindex="-1"></a>x <span class="sc">%+d%</span> <span class="sc">-</span><span class="dv">1</span><span class="sc">:</span><span class="dv">1</span> <span class="co"># same as x + -1:1</span></span></code></pre></div>
 <pre class="r-output"><code>## date [tind]
-## [1] 2025-10-24 2025-10-25 2025-10-26
+## [1] 2025-11-06 2025-11-07 2025-11-08
 </code></pre>
 <div class="sourceCode" id="cb48"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1" tabindex="-1"></a>(x <span class="ot">&lt;-</span> <span class="fu">now</span>())</span></code></pre></div>
 <pre class="r-output"><code>## date-time, time zone: Europe/Warsaw [tind]
-## [1]  2025-10-25 11:15:59 CEST
+## [1]  2025-11-07 09:05:42 CET
 </code></pre>
 <div class="sourceCode" id="cb49"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb49-1"><a href="#cb49-1" tabindex="-1"></a>x <span class="sc">%-h%</span> <span class="dv">3</span><span class="sc">:</span><span class="dv">0</span></span></code></pre></div>
 <pre class="r-output"><code>## date-time, time zone: Europe/Warsaw [tind]
-## [1]  2025-10-25 08:15:59 CEST  2025-10-25 09:15:59 CEST
-## [3]  2025-10-25 10:15:59 CEST  2025-10-25 11:15:59 CEST
+## [1]  2025-11-07 06:05:42 CET  2025-11-07 07:05:42 CET  2025-11-07 08:05:42 CET
+## [4]  2025-11-07 09:05:42 CET
 </code></pre>
 <div class="sourceCode" id="cb50"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb50-1"><a href="#cb50-1" tabindex="-1"></a>x <span class="sc">-</span> <span class="fu">hours</span>(<span class="dv">3</span><span class="sc">:</span><span class="dv">0</span>)</span></code></pre></div>
 <pre class="r-output"><code>## date-time, time zone: Europe/Warsaw [tind]
-## [1]  2025-10-25 08:15:59 CEST  2025-10-25 09:15:59 CEST
-## [3]  2025-10-25 10:15:59 CEST  2025-10-25 11:15:59 CEST
+## [1]  2025-11-07 06:05:42 CET  2025-11-07 07:05:42 CET  2025-11-07 08:05:42 CET
+## [4]  2025-11-07 09:05:42 CET
 </code></pre>
 <div class="sourceCode" id="cb51"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb51-1"><a href="#cb51-1" tabindex="-1"></a>x <span class="sc">%-min%</span> <span class="dv">3</span><span class="sc">:</span><span class="dv">0</span></span></code></pre></div>
 <pre class="r-output"><code>## date-time, time zone: Europe/Warsaw [tind]
-## [1]  2025-10-25 11:12:59 CEST  2025-10-25 11:13:59 CEST
-## [3]  2025-10-25 11:14:59 CEST  2025-10-25 11:15:59 CEST
+## [1]  2025-11-07 09:02:42 CET  2025-11-07 09:03:42 CET  2025-11-07 09:04:42 CET
+## [4]  2025-11-07 09:05:42 CET
 </code></pre>
 <div class="sourceCode" id="cb52"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb52-1"><a href="#cb52-1" tabindex="-1"></a>x <span class="sc">-</span> <span class="fu">mins</span>(<span class="dv">3</span><span class="sc">:</span><span class="dv">0</span>)</span></code></pre></div>
 <pre class="r-output"><code>## date-time, time zone: Europe/Warsaw [tind]
-## [1]  2025-10-25 11:12:59 CEST  2025-10-25 11:13:59 CEST
-## [3]  2025-10-25 11:14:59 CEST  2025-10-25 11:15:59 CEST
+## [1]  2025-11-07 09:02:42 CET  2025-11-07 09:03:42 CET  2025-11-07 09:04:42 CET
+## [4]  2025-11-07 09:05:42 CET
 </code></pre>
 <div class="sourceCode" id="cb53"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb53-1"><a href="#cb53-1" tabindex="-1"></a>x <span class="sc">%-s%</span> <span class="dv">3</span><span class="sc">:</span><span class="dv">0</span> <span class="co"># same as x - 3:0</span></span></code></pre></div>
 <pre class="r-output"><code>## date-time, time zone: Europe/Warsaw [tind]
-## [1]  2025-10-25 11:15:56 CEST  2025-10-25 11:15:57 CEST
-## [3]  2025-10-25 11:15:58 CEST  2025-10-25 11:15:59 CEST
+## [1]  2025-11-07 09:05:39 CET  2025-11-07 09:05:40 CET  2025-11-07 09:05:41 CET
+## [4]  2025-11-07 09:05:42 CET
 </code></pre>
 <div class="sourceCode" id="cb54"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb54-1"><a href="#cb54-1" tabindex="-1"></a>x <span class="sc">-</span> <span class="fu">secs</span>(<span class="dv">3</span><span class="sc">:</span><span class="dv">0</span>) <span class="co"># same as x - 3:0</span></span></code></pre></div>
 <pre class="r-output"><code>## date-time, time zone: Europe/Warsaw [tind]
-## [1]  2025-10-25 11:15:56 CEST  2025-10-25 11:15:57 CEST
-## [3]  2025-10-25 11:15:58 CEST  2025-10-25 11:15:59 CEST
+## [1]  2025-11-07 09:05:39 CET  2025-11-07 09:05:40 CET  2025-11-07 09:05:41 CET
+## [4]  2025-11-07 09:05:42 CET
 </code></pre>
 </div>
 <div id="sequences-of-time-indices" class="section level2">
@@ -624,7 +624,7 @@ below create sequences from the beginning of current quarter till today
 and from today till the end of the quarter:</p>
 <div class="sourceCode" id="cb58"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb58-1"><a href="#cb58-1" tabindex="-1"></a>(td <span class="ot">&lt;-</span> <span class="fu">today</span>())</span></code></pre></div>
 <pre class="r-output"><code>## date [tind]
-## [1] 2025-10-25
+## [1] 2025-11-07
 </code></pre>
 <div class="sourceCode" id="cb59"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb59-1"><a href="#cb59-1" tabindex="-1"></a><span class="fu">seq</span>(<span class="fu">as.quarter</span>(td), td)</span></code></pre></div>
 <pre class="r-output"><code>## date [tind]
@@ -632,22 +632,22 @@ and from today till the end of the quarter:</p>
 ##  [7] 2025-10-07 2025-10-08 2025-10-09 2025-10-10 2025-10-11 2025-10-12
 ## [13] 2025-10-13 2025-10-14 2025-10-15 2025-10-16 2025-10-17 2025-10-18
 ## [19] 2025-10-19 2025-10-20 2025-10-21 2025-10-22 2025-10-23 2025-10-24
-## [25] 2025-10-25
+## [25] 2025-10-25 2025-10-26 2025-10-27 2025-10-28 2025-10-29 2025-10-30
+## [31] 2025-10-31 2025-11-01 2025-11-02 2025-11-03 2025-11-04 2025-11-05
+## [37] 2025-11-06 2025-11-07
 </code></pre>
 <div class="sourceCode" id="cb60"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb60-1"><a href="#cb60-1" tabindex="-1"></a><span class="fu">seq</span>(td, <span class="fu">as.quarter</span>(td))</span></code></pre></div>
 <pre class="r-output"><code>## date [tind]
-##  [1] 2025-10-25 2025-10-26 2025-10-27 2025-10-28 2025-10-29 2025-10-30
-##  [7] 2025-10-31 2025-11-01 2025-11-02 2025-11-03 2025-11-04 2025-11-05
-## [13] 2025-11-06 2025-11-07 2025-11-08 2025-11-09 2025-11-10 2025-11-11
-## [19] 2025-11-12 2025-11-13 2025-11-14 2025-11-15 2025-11-16 2025-11-17
-## [25] 2025-11-18 2025-11-19 2025-11-20 2025-11-21 2025-11-22 2025-11-23
-## [31] 2025-11-24 2025-11-25 2025-11-26 2025-11-27 2025-11-28 2025-11-29
-## [37] 2025-11-30 2025-12-01 2025-12-02 2025-12-03 2025-12-04 2025-12-05
-## [43] 2025-12-06 2025-12-07 2025-12-08 2025-12-09 2025-12-10 2025-12-11
-## [49] 2025-12-12 2025-12-13 2025-12-14 2025-12-15 2025-12-16 2025-12-17
-## [55] 2025-12-18 2025-12-19 2025-12-20 2025-12-21 2025-12-22 2025-12-23
-## [61] 2025-12-24 2025-12-25 2025-12-26 2025-12-27 2025-12-28 2025-12-29
-## [67] 2025-12-30 2025-12-31
+##  [1] 2025-11-07 2025-11-08 2025-11-09 2025-11-10 2025-11-11 2025-11-12
+##  [7] 2025-11-13 2025-11-14 2025-11-15 2025-11-16 2025-11-17 2025-11-18
+## [13] 2025-11-19 2025-11-20 2025-11-21 2025-11-22 2025-11-23 2025-11-24
+## [19] 2025-11-25 2025-11-26 2025-11-27 2025-11-28 2025-11-29 2025-11-30
+## [25] 2025-12-01 2025-12-02 2025-12-03 2025-12-04 2025-12-05 2025-12-06
+## [31] 2025-12-07 2025-12-08 2025-12-09 2025-12-10 2025-12-11 2025-12-12
+## [37] 2025-12-13 2025-12-14 2025-12-15 2025-12-16 2025-12-17 2025-12-18
+## [43] 2025-12-19 2025-12-20 2025-12-21 2025-12-22 2025-12-23 2025-12-24
+## [49] 2025-12-25 2025-12-26 2025-12-27 2025-12-28 2025-12-29 2025-12-30
+## [55] 2025-12-31
 </code></pre>
 </div>
 <div id="rounding-time-indices" class="section level2">
@@ -941,9 +941,9 @@ installed.</p>
 ##              <span style="font-weight: bold;">Oct</span>                       <span style="font-weight: bold;">Nov</span>                       <span style="font-weight: bold;">Dec</span>         
 ##      <span style="color: #555555;">Mo</span> <span style="color: #555555;">Tu</span> <span style="color: #555555;">We</span> <span style="color: #555555;">Th</span> <span style="color: #555555;">Fr</span> <span style="color: #555555;">Sa</span> <span style="color: #555555;">Su</span>      <span style="color: #555555;">Mo</span> <span style="color: #555555;">Tu</span> <span style="color: #555555;">We</span> <span style="color: #555555;">Th</span> <span style="color: #555555;">Fr</span> <span style="color: #555555;">Sa</span> <span style="color: #555555;">Su</span>      <span style="color: #555555;">Mo</span> <span style="color: #555555;">Tu</span> <span style="color: #555555;">We</span> <span style="color: #555555;">Th</span> <span style="color: #555555;">Fr</span> <span style="color: #555555;">Sa</span> <span style="color: #555555;">Su</span>
 ##   <span style="color: #555555;">40</span>        1  2  3  <span style="color: #0000BB;">4</span>  <span style="color: #0000BB;">5</span>   <span style="color: #555555;">44</span>                 <span style="color: #0000BB;">1</span>  <span style="color: #0000BB;">2</span>   <span style="color: #555555;">49</span>  1  2  3  4  5  <span style="color: #0000BB;">6</span>  <span style="color: #0000BB;">7</span>
-##   <span style="color: #555555;">41</span>  6  7  8  9 10 <span style="color: #0000BB;">11</span> <span style="color: #0000BB;">12</span>   <span style="color: #555555;">45</span>  3  4  5  6  7  <span style="color: #0000BB;">8</span>  <span style="color: #0000BB;">9</span>   <span style="color: #555555;">50</span>  8  9 10 11 12 <span style="color: #0000BB;">13</span> <span style="color: #0000BB;">14</span>
+##   <span style="color: #555555;">41</span>  6  7  8  9 10 <span style="color: #0000BB;">11</span> <span style="color: #0000BB;">12</span>   <span style="color: #555555;">45</span>  3  4  5  6<span style="color: #BBBBBB; background-color: #BB0000;">[</span> 7<span style="color: #BBBBBB; background-color: #BB0000;">]</span> <span style="color: #0000BB;">8</span>  <span style="color: #0000BB;">9</span>   <span style="color: #555555;">50</span>  8  9 10 11 12 <span style="color: #0000BB;">13</span> <span style="color: #0000BB;">14</span>
 ##   <span style="color: #555555;">42</span> <span style="color: #BB0000; font-weight: bold;">13</span> 14 15 16 17 <span style="color: #0000BB;">18</span> <span style="color: #0000BB;">19</span>   <span style="color: #555555;">46</span> 10 <span style="color: #BB0000; font-weight: bold;">11</span> 12 13 14 <span style="color: #0000BB;">15</span> <span style="color: #0000BB;">16</span>   <span style="color: #555555;">51</span> 15 16 17 18 19 <span style="color: #0000BB;">20</span> <span style="color: #0000BB;">21</span>
-##   <span style="color: #555555;">43</span> 20 21 22 23 24<span style="color: #BBBBBB; background-color: #BB0000;">[</span><span style="color: #0000BB;">25</span><span style="color: #BBBBBB; background-color: #BB0000;">]</span><span style="color: #0000BB;">26</span>   <span style="color: #555555;">47</span> 17 18 19 20 21 <span style="color: #0000BB;">22</span> <span style="color: #0000BB;">23</span>   <span style="color: #555555;">52</span> 22 23 24 <span style="color: #BB0000; font-weight: bold;">25</span> 26 <span style="color: #0000BB;">27</span> <span style="color: #0000BB;">28</span>
+##   <span style="color: #555555;">43</span> 20 21 22 23 24 <span style="color: #0000BB;">25</span> <span style="color: #0000BB;">26</span>   <span style="color: #555555;">47</span> 17 18 19 20 21 <span style="color: #0000BB;">22</span> <span style="color: #0000BB;">23</span>   <span style="color: #555555;">52</span> 22 23 24 <span style="color: #BB0000; font-weight: bold;">25</span> 26 <span style="color: #0000BB;">27</span> <span style="color: #0000BB;">28</span>
 ##   <span style="color: #555555;">44</span> 27 28 29 30 31         <span style="color: #555555;">48</span> 24 25 26 <span style="color: #BB0000; font-weight: bold;">27</span> 28 <span style="color: #0000BB;">29</span> <span style="color: #0000BB;">30</span>   <span style="color: #555555;">01</span> 29 30 31
 </code></pre>
 <div class="sourceCode" id="cb96"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb96-1"><a href="#cb96-1" tabindex="-1"></a><span class="fu">calendar</span>(<span class="st">&quot;2020-01&quot;</span>, calendar_US)</span></code></pre></div>
@@ -961,12 +961,12 @@ installed.</p>
 ##   <span style="color: #555555;">40</span>        1  2  3  <span style="color: #0000BB;">4</span>  <span style="color: #0000BB;">5</span>
 ##   <span style="color: #555555;">41</span>  6  7  8  9 10 <span style="color: #0000BB;">11</span> <span style="color: #0000BB;">12</span>
 ##   <span style="color: #555555;">42</span> <span style="color: #BB0000; font-weight: bold;">13</span> 14 15 16 17 <span style="color: #0000BB;">18</span> <span style="color: #0000BB;">19</span>  | <span style="color: #BB0000; font-weight: bold;">13</span> - Columbus Day
-##   <span style="color: #555555;">43</span> 20 21 22 23 24<span style="color: #BBBBBB; background-color: #BB0000;">[</span><span style="color: #0000BB;">25</span><span style="color: #BBBBBB; background-color: #BB0000;">]</span><span style="color: #0000BB;">26</span>
+##   <span style="color: #555555;">43</span> 20 21 22 23 24 <span style="color: #0000BB;">25</span> <span style="color: #0000BB;">26</span>
 ##   <span style="color: #555555;">44</span> 27 28 29 30 31      
 ##   <span style="font-weight: bold;">         Nov 2025      </span>
 ##      <span style="color: #555555;">Mo</span> <span style="color: #555555;">Tu</span> <span style="color: #555555;">We</span> <span style="color: #555555;">Th</span> <span style="color: #555555;">Fr</span> <span style="color: #555555;">Sa</span> <span style="color: #555555;">Su</span>
 ##   <span style="color: #555555;">44</span>                 <span style="color: #0000BB;">1</span>  <span style="color: #0000BB;">2</span>
-##   <span style="color: #555555;">45</span>  3  4  5  6  7  <span style="color: #0000BB;">8</span>  <span style="color: #0000BB;">9</span>
+##   <span style="color: #555555;">45</span>  3  4  5  6<span style="color: #BBBBBB; background-color: #BB0000;">[</span> 7<span style="color: #BBBBBB; background-color: #BB0000;">]</span> <span style="color: #0000BB;">8</span>  <span style="color: #0000BB;">9</span>
 ##   <span style="color: #555555;">46</span> 10 <span style="color: #BB0000; font-weight: bold;">11</span> 12 13 14 <span style="color: #0000BB;">15</span> <span style="color: #0000BB;">16</span>  | <span style="color: #BB0000; font-weight: bold;">11</span> - Veterans Day
 ##   <span style="color: #555555;">47</span> 17 18 19 20 21 <span style="color: #0000BB;">22</span> <span style="color: #0000BB;">23</span>
 ##   <span style="color: #555555;">48</span> 24 25 26 <span style="color: #BB0000; font-weight: bold;">27</span> 28 <span style="color: #0000BB;">29</span> <span style="color: #0000BB;">30</span>  | <span style="color: #BB0000; font-weight: bold;">27</span> - Thanksgiving Day
@@ -1126,9 +1126,9 @@ before is used to name holidays and other observances.</p>
 ##              <span style="font-weight: bold;">Oct</span>                       <span style="font-weight: bold;">Nov</span>                       <span style="font-weight: bold;">Dec</span>         
 ##      <span style="color: #555555;">Mo</span> <span style="color: #555555;">Tu</span> <span style="color: #555555;">We</span> <span style="color: #555555;">Th</span> <span style="color: #555555;">Fr</span> <span style="color: #555555;">Sa</span> <span style="color: #555555;">Su</span>      <span style="color: #555555;">Mo</span> <span style="color: #555555;">Tu</span> <span style="color: #555555;">We</span> <span style="color: #555555;">Th</span> <span style="color: #555555;">Fr</span> <span style="color: #555555;">Sa</span> <span style="color: #555555;">Su</span>      <span style="color: #555555;">Mo</span> <span style="color: #555555;">Tu</span> <span style="color: #555555;">We</span> <span style="color: #555555;">Th</span> <span style="color: #555555;">Fr</span> <span style="color: #555555;">Sa</span> <span style="color: #555555;">Su</span>
 ##   <span style="color: #555555;">40</span>        1  2  3  <span style="color: #0000BB;">4</span>  <span style="color: #0000BB;">5</span>   <span style="color: #555555;">44</span>                 <span style="color: #BB0000; font-weight: bold;">1</span>  <span style="color: #0000BB; text-decoration: underline;">2</span>   <span style="color: #555555;">49</span>  1  2  3  4  5  <span style="color: #0000BB; text-decoration: underline;">6</span>  <span style="color: #0000BB;">7</span>
-##   <span style="color: #555555;">41</span>  6  7  8  9 10 <span style="color: #0000BB;">11</span> <span style="color: #0000BB;">12</span>   <span style="color: #555555;">45</span>  3  4  5  6  7  <span style="color: #0000BB;">8</span>  <span style="color: #0000BB;">9</span>   <span style="color: #555555;">50</span>  8  9 10 11 12 <span style="color: #0000BB;">13</span> <span style="color: #0000BB;">14</span>
+##   <span style="color: #555555;">41</span>  6  7  8  9 10 <span style="color: #0000BB;">11</span> <span style="color: #0000BB;">12</span>   <span style="color: #555555;">45</span>  3  4  5  6<span style="color: #BBBBBB; background-color: #BB0000;">[</span> 7<span style="color: #BBBBBB; background-color: #BB0000;">]</span> <span style="color: #0000BB;">8</span>  <span style="color: #0000BB;">9</span>   <span style="color: #555555;">50</span>  8  9 10 11 12 <span style="color: #0000BB;">13</span> <span style="color: #0000BB;">14</span>
 ##   <span style="color: #555555;">42</span> 13 14 15 16 17 <span style="color: #0000BB;">18</span> <span style="color: #0000BB;">19</span>   <span style="color: #555555;">46</span> 10 <span style="color: #BB0000; font-weight: bold;">11</span> 12 13 14 <span style="color: #0000BB;">15</span> <span style="color: #0000BB;">16</span>   <span style="color: #555555;">51</span> 15 16 17 18 19 <span style="color: #0000BB;">20</span> <span style="color: #0000BB;">21</span>
-##   <span style="color: #555555;">43</span> 20 21 22 23 24<span style="color: #BBBBBB; background-color: #BB0000;">[</span><span style="color: #0000BB;">25</span><span style="color: #BBBBBB; background-color: #BB0000;">]</span><span style="color: #0000BB;">26</span>   <span style="color: #555555;">47</span> 17 18 19 20 21 <span style="color: #0000BB;">22</span> <span style="color: #0000BB;">23</span>   <span style="color: #555555;">52</span> 22 23 <span style="color: #BB0000; font-weight: bold;">24</span> <span style="color: #BB0000; font-weight: bold;">25</span> <span style="color: #BB0000; font-weight: bold;">26</span> <span style="color: #0000BB;">27</span> <span style="color: #0000BB;">28</span>
+##   <span style="color: #555555;">43</span> 20 21 22 23 24 <span style="color: #0000BB;">25</span> <span style="color: #0000BB;">26</span>   <span style="color: #555555;">47</span> 17 18 19 20 21 <span style="color: #0000BB;">22</span> <span style="color: #0000BB;">23</span>   <span style="color: #555555;">52</span> 22 23 <span style="color: #BB0000; font-weight: bold;">24</span> <span style="color: #BB0000; font-weight: bold;">25</span> <span style="color: #BB0000; font-weight: bold;">26</span> <span style="color: #0000BB;">27</span> <span style="color: #0000BB;">28</span>
 ##   <span style="color: #555555;">44</span> 27 28 29 30 31         <span style="color: #555555;">48</span> 24 25 26 27 28 <span style="color: #0000BB; text-decoration: underline;">29</span> <span style="color: #0000BB;">30</span>   <span style="color: #555555;">01</span> 29 30 <span style="text-decoration: underline;">31</span>
 </code></pre>
 <div class="sourceCode" id="cb101"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb101-1"><a href="#cb101-1" tabindex="-1"></a><span class="fu">calendar</span>(<span class="st">&quot;2020-06&quot;</span>, calendar_PL)</span></code></pre></div>
@@ -1146,12 +1146,12 @@ before is used to name holidays and other observances.</p>
 ##   <span style="color: #555555;">40</span>        1  2  3  <span style="color: #0000BB;">4</span>  <span style="color: #0000BB;">5</span>
 ##   <span style="color: #555555;">41</span>  6  7  8  9 10 <span style="color: #0000BB;">11</span> <span style="color: #0000BB;">12</span>
 ##   <span style="color: #555555;">42</span> 13 14 15 16 17 <span style="color: #0000BB;">18</span> <span style="color: #0000BB;">19</span>
-##   <span style="color: #555555;">43</span> 20 21 22 23 24<span style="color: #BBBBBB; background-color: #BB0000;">[</span><span style="color: #0000BB;">25</span><span style="color: #BBBBBB; background-color: #BB0000;">]</span><span style="color: #0000BB;">26</span>
+##   <span style="color: #555555;">43</span> 20 21 22 23 24 <span style="color: #0000BB;">25</span> <span style="color: #0000BB;">26</span>
 ##   <span style="color: #555555;">44</span> 27 28 29 30 31      
 ##   <span style="font-weight: bold;">         Nov 2025      </span>
 ##      <span style="color: #555555;">Mo</span> <span style="color: #555555;">Tu</span> <span style="color: #555555;">We</span> <span style="color: #555555;">Th</span> <span style="color: #555555;">Fr</span> <span style="color: #555555;">Sa</span> <span style="color: #555555;">Su</span>
 ##   <span style="color: #555555;">44</span>                 <span style="color: #BB0000; font-weight: bold;">1</span>  <span style="color: #0000BB; text-decoration: underline;">2</span>  |  <span style="color: #BB0000; font-weight: bold;">1</span> - All Saints Day, <span style="color: #0000BB; text-decoration: underline;">2</span> - All Souls&#39; Day
-##   <span style="color: #555555;">45</span>  3  4  5  6  7  <span style="color: #0000BB;">8</span>  <span style="color: #0000BB;">9</span>
+##   <span style="color: #555555;">45</span>  3  4  5  6<span style="color: #BBBBBB; background-color: #BB0000;">[</span> 7<span style="color: #BBBBBB; background-color: #BB0000;">]</span> <span style="color: #0000BB;">8</span>  <span style="color: #0000BB;">9</span>
 ##   <span style="color: #555555;">46</span> 10 <span style="color: #BB0000; font-weight: bold;">11</span> 12 13 14 <span style="color: #0000BB;">15</span> <span style="color: #0000BB;">16</span>  | <span style="color: #BB0000; font-weight: bold;">11</span> - Independence Day
 ##   <span style="color: #555555;">47</span> 17 18 19 20 21 <span style="color: #0000BB;">22</span> <span style="color: #0000BB;">23</span>
 ##   <span style="color: #555555;">48</span> 24 25 26 27 28 <span style="color: #0000BB; text-decoration: underline;">29</span> <span style="color: #0000BB;">30</span>  | <span style="color: #0000BB; text-decoration: underline;">29</span> - Saint Andrew&#39;s Eve

@@ -1,7 +1,7 @@
 Package: tind
 Title: A Common Representation of Time Indices of Different Types
-Version: 0.2.1
-Date: 2025-10-25
+Version: 0.2.2
+Date: 2025-11-07
 Authors@R: person("Grzegorz", "Klima", , "dever@post.pl", c("aut", "cre", "cph"))
 Description: Provides an easy-to-use tind class representing time indices
     of different types (years, quarters, months, ISO 8601 weeks, dates,
@@ -32,8 +32,8 @@ Encoding: UTF-8
 NeedsCompilation: yes
 VignetteBuilder: knitr
 RoxygenNote: 7.3.3
-Packaged: 2025-10-25 09:16:04 UTC; dever
+Packaged: 2025-11-07 08:05:47 UTC; dever
 Author: Grzegorz Klima [aut, cre, cph]
 Maintainer: Grzegorz Klima <dever@post.pl>
 Repository: CRAN
-Date/Publication: 2025-10-26 22:50:02 UTC
+Date/Publication: 2025-11-07 10:00:02 UTC
