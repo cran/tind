@@ -1,7 +1,7 @@
 /*
  * This file is a part of tind.
  *
- * Copyright (c) Grzegorz Klima 2025
+ * Copyright (c) Grzegorz Klima 2025, 2026
  *
  ***********************************************************************
  * calendrical computations (years, quarters, months, weeks, and days) *
@@ -78,6 +78,8 @@ SEXP lastdwinmonth(SEXP, SEXP);
 SEXP validate_ymd(SEXP, SEXP, SEXP);
 SEXP validate_ywu(SEXP, SEXP, SEXP);
 SEXP nthdwinmonth(SEXP, SEXP, SEXP);
+SEXP nthdwafter(SEXP, SEXP, SEXP);
+SEXP nthdwbefore(SEXP, SEXP, SEXP);
 
 
 

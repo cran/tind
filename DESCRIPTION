@@ -1,7 +1,7 @@
 Package: tind
 Title: A Common Representation of Time Indices of Different Types
-Version: 0.2.3
-Date: 2025-12-22
+Version: 0.2.4
+Date: 2026-02-02
 Authors@R: person("Grzegorz", "Klima", , "dever@post.pl", c("aut", "cre", "cph"))
 Description: Provides an easy-to-use tind class representing time indices
     of different types (years, quarters, months, ISO 8601 weeks, dates,
@@ -17,7 +17,8 @@ Description: Provides an easy-to-use tind class representing time indices
 Depends: R (>= 3.6.0)
 Suggests: crayon, methods, stats, testthat, knitr, rmarkdown, fansi,
         htmltools
-Enhances: utils, graphics, ggplot2, zoo, timeDate, chron, data.table
+Enhances: utils, graphics, ggplot2, zoo, timeDate, chron, data.table,
+        hms
 Collate: base-utils.R base-in.R base-yqmwd.R base-tz.R base-th.R
         base-res.R base-pretty.R base-locale.R base-types.R
         base-parse.R tind.R format.R parse.R coercion.R methods.R
@@ -32,8 +33,8 @@ Encoding: UTF-8
 NeedsCompilation: yes
 VignetteBuilder: knitr
 RoxygenNote: 7.3.3
-Packaged: 2025-12-21 23:54:55 UTC; dever
+Packaged: 2026-02-02 19:38:40 UTC; dever
 Author: Grzegorz Klima [aut, cre, cph]
 Maintainer: Grzegorz Klima <dever@post.pl>
 Repository: CRAN
-Date/Publication: 2025-12-22 08:40:02 UTC
+Date/Publication: 2026-02-02 21:10:02 UTC

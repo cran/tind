@@ -1,7 +1,7 @@
 #
 # This file is a part of tind.
 #
-# Copyright (c) Grzegorz Klima 2025
+# Copyright (c) Grzegorz Klima 2025, 2026
 #
 # #################### #
 # parsing time indices #
@@ -164,9 +164,9 @@ parse_t <- function(x, order, locale = NULL, type = NULL, tz = NULL)
     if (!is.null(type)) {
         typetz <- .check_type_tz(type, tz)
         if (type != tps[1L]) {
-            mes <- gettextf("type inferred (%s) is different from type provided as argument (%s)",
+            mes <- gettextf("type inferred (%s) is different from %s",
                             .ti_type2char(tps[1L], dash = TRUE),
-                            .ti_type2char(type, dash = TRUE))
+                            .ti_type2char(type))
             stop(mes, call. = FALSE, domain = NA)
         }
     } else {

@@ -1,7 +1,7 @@
 /*
  * This file is a part of tind.
  *
- * Copyright (c) Grzegorz Klima 2025
+ * Copyright (c) Grzegorz Klima 2025, 2026
  *
  ***********************************************************************
  * calendrical computations (years, quarters, months, weeks, and days) *
@@ -1147,6 +1147,40 @@ nthdwinmonth_(int nth, int dw, int m)
 }
 
 THREEARGOP_IMPL(nthdwinmonth)
+
+
+
+static inline
+TIND__ATTRIBUTE_INLINE
+int
+nthdwafter_(int nth, int dw, int d)
+{
+    if (nth < 1 || dw < 1 || dw > 7 || d == NA_INTEGER) return NA_INTEGER;
+    int dw0;
+    dw0 = dayofweek(d);
+    d += (dw > dw0) ? dw - dw0 : dw - dw0 + 7;
+    d += 7 * (nth - 1);
+    return (d > VALID_D_MAX) ? NA_INTEGER : d;
+}
+
+THREEARGOP_IMPL(nthdwafter)
+
+
+
+static inline
+TIND__ATTRIBUTE_INLINE
+int
+nthdwbefore_(int nth, int dw, int d)
+{
+    if (nth < 1 || dw < 1 || dw > 7 || d == NA_INTEGER) return NA_INTEGER;
+    int dw0;
+    dw0 = dayofweek(d);
+    d += (dw < dw0) ? dw - dw0 : dw - dw0 - 7;
+    d -= 7 * (nth - 1);
+    return (d < VALID_D_MIN) ? NA_INTEGER : d;
+}
+
+THREEARGOP_IMPL(nthdwbefore)
 
 
 #undef THREEARGOP_IMPL
